@@ -28,7 +28,7 @@
 ## Test 测试代码
 
 
-```
+```javascript
 
 var db = require('./index');
 
