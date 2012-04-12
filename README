@@ -28,7 +28,7 @@
 ## Test 测试代码
 
 
-
+```
 var db = require('./index');
 
 db.config({
@@ -83,3 +83,4 @@ db.exec(
 		}
 	}
 );
+```
