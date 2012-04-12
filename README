@@ -29,7 +29,6 @@
 
 
 ```javascript
-
 var db = require('./index');
 
 db.config({
