@@ -29,6 +29,7 @@
 
 
 ```
+
 var db = require('./index');
 
 db.config({
@@ -83,4 +84,5 @@ db.exec(
 		}
 	}
 );
+
 ```
