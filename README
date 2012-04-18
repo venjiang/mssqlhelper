@@ -97,5 +97,16 @@ db.exec(
 	（1）把所有js文件用utf-8编码保存
 	（2）数据库中含有中文的字段，必须是unicode类型，比如varchar应该改为nvarchar
 
-
+4:在多进程cluster的的使用：
+	var db = require('./index');	
+	var cluster = require('cluster');	
+	if (cluster.isMaster) {
+	    var numCPUs = require('os').cpus().length;
+	    for (var i = 0; i < numCPUs; i++) {
+	        var worker = cluster.fork();
+	    }
+	} else {
+	    db.config(..);
+	    db.query(..);
+	}
 
