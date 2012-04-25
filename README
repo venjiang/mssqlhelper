@@ -13,11 +13,6 @@
  * 将支持连接池
  * 更多性能加强
 
-## Requirements 需要如下组件（已内置）
-
- * [tds](http://cretz.github.com/node-tds/)（已内置）
-
-
 
 ## Use 使用
     
